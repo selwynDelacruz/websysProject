@@ -41,22 +41,21 @@
     <div class="ion-grid">
         <div class="ion-row">
           <div class="ion-col size-lg-4 size-md-4 size-6">
-            <div class="ion-card card-style">
+            <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'SCOUPS PHOTOCARDS', 'P100.00', '../websysProject/assets/images/mrBeast.jpg')">
               <div class="ion-card-header">
-                <div class="ion-card-title card-title"><img src="../websysProject/assets/images/mrBeast.jpg" alt="example pic"></div>
+                  <div class="ion-card-title card-title"><img src="../websysProject/assets/images/mrBeast.jpg" alt="example pic"></div>
               </div>
-              
               <div class="ion-card-content card-content">
-                <p class="group-name">SEVENTEEN</p>
-                <p class="merch-name">SCOUPS PHOTOCARDS</p>
-                <p class="merch-price">P100.00</p>
+                  <p class="group-name">SEVENTEEN</p>
+                  <p class="merch-name">SCOUPS PHOTOCARDS</p>
+                  <p class="merch-price">P100.00</p>
               </div>
-            </div>
+          </div>
           </div>
         </div>
         <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'JEONGHAN PHOTOCARDS', 'P120.00', '../websysProject/assets/images/mrBeast.jpg')">
                 <div class="ion-card-header">
                   <div class="ion-card-title card-title"><img src="../websysProject/assets/images/mrBeast.jpg" alt="example pic"></div>
                 </div>
@@ -321,7 +320,16 @@
       </div>
     </div>  
 
-    
+    <script>
+      function navigateToOrder(groupName, merchName, merchPrice, imgSrc) {
+          const encodedGroupName = encodeURIComponent(groupName);
+          const encodedMerchName = encodeURIComponent(merchName);
+          const encodedMerchPrice = encodeURIComponent(merchPrice);
+          const encodedImgSrc = encodeURIComponent(imgSrc);
+
+          window.location.href = `order.html?group=${encodedGroupName}&name=${encodedMerchName}&price=${encodedMerchPrice}&img=${encodedImgSrc}`;
+      }
+  </script>
     
 </body>
 </html>

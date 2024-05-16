@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Order Details</h2>
+        <div class="order-details">
+            <div class="product-image">
+                <img id="product-img" src="" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <p id="group-name"></p>
+                <p id="merch-name"></p>
+                <p id="merch-price"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to retrieve query parameters from URL
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Retrieve data from query parameters and populate the order details
+        window.onload = function () {
+            const groupName = decodeURIComponent(getQueryParam('group'));
+            const merchName = decodeURIComponent(getQueryParam('name'));
+            const merchPrice = decodeURIComponent(getQueryParam('price'));
+            const imgSrc = decodeURIComponent(getQueryParam('img'));
+
+            document.getElementById('group-name').textContent = `Group: ${groupName}`;
+            document.getElementById('merch-name').textContent = `Merch Name: ${merchName}`;
+            document.getElementById('merch-price').textContent = `Price: ${merchPrice}`;
+            document.getElementById('product-img').src = imgSrc;
+        };
+    </script>
+</body>
+
+</html>
