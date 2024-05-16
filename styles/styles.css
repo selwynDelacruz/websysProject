@@ -94,30 +94,3 @@ h4 {
   margin: 20px;
   list-style: none;
 }
-
-.main-header nav li a{
-  color: white;
-  font-size: 1.25rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-/* hero */
-.product-preview{
-  background: linear-gradient(0deg, #92A8D1 0%, #F7CAC9 96%);
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-}
-
-.product-preview img{
-  padding: 50px;
-  height: 85vh;
-  
-}
-
-.photocards{
-  height: 907px;
-  background-color: var(--secondary-color-light);
-}
