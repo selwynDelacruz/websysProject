@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main_sells</title>
+    <title>Products</title>
     <link rel="stylesheet" href="../websysProject/styles/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -322,13 +322,13 @@
 
     <script>
       function navigateToOrder(groupName, merchName, merchPrice, imgSrc) {
-          const encodedGroupName = encodeURIComponent(groupName);
-          const encodedMerchName = encodeURIComponent(merchName);
-          const encodedMerchPrice = encodeURIComponent(merchPrice);
-          const encodedImgSrc = encodeURIComponent(imgSrc);
-
-          window.location.href = `order.html?group=${encodedGroupName}&name=${encodedMerchName}&price=${encodedMerchPrice}&img=${encodedImgSrc}`;
-      }
+    const encodedGroupName = encodeURIComponent(groupName);
+    const encodedMerchName = encodeURIComponent(merchName);
+    const encodedMerchPrice = encodeURIComponent(merchPrice);
+    const encodedImgSrc = encodeURIComponent(imgSrc);
+    
+    window.location.href = `order-page.html?group=${encodedGroupName}&name=${encodedMerchName}&price=${encodedMerchPrice}&img=${encodedImgSrc}`;
+}
   </script>
     
 </body>

@@ -94,3 +94,185 @@ h4 {
   margin: 20px;
   list-style: none;
 }
+
+/* Products page */
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.container h2, .container h3 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+
+.line {
+  width: 80%;
+  border: 2px solid black;
+  margin: 10px auto;
+  margin-bottom: 30px;
+}
+
+
+.ion-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+
+.ion-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.ion-card {
+  position: relative;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 200px;
+}
+
+.ion-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card-style {
+  cursor: pointer;
+}
+
+
+.ion-card-header {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.ion-card-title {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ion-card-title img {
+  width: 100%;
+  height: auto;
+}
+
+
+.ion-card-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.ion-card-content p {
+  margin: 5px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.group-name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.merch-name {
+  font-size: 1em;
+}
+
+.merch-price {
+  font-size: 1em;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+/* Order Page Styling */
+.order-container {
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.order-details-card {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 20px;
+}
+
+
+.order-product-image {
+  flex: 1;
+  max-width: 50%;
+  overflow: hidden;
+}
+
+.order-product-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.order-product-info {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.order-product-info p {
+  margin: 10px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.order-group-name {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.order-merch-name {
+  font-size: 1.2em;
+}
+
+.order-merch-price {
+  font-size: 1.2em;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+
+.order-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.order-button:hover {
+  background-color: #218838;
+}
