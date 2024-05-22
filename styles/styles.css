@@ -1,46 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
 :root {
-/* colors */
---bg-color: #F1F1F1;
+  /* colors */
+  --bg-color: #f1f1f1;
 
---primary-color: #92A8D1;
---primary-color-light: #D4E4F3;
---primary-color-dark: #4E71B1;
+  --primary-color: #92a8d1;
+  --primary-color-light: #d4e4f3;
+  --primary-color-dark: #4e71b1;
 
---secondary-color: #F7CAC9;
---secondary-color-light: #F5E1E1;
---secondary-color-dark: #F4A2A0;
+  --secondary-color: #f7cac9;
+  --secondary-color-light: #f5e1e1;
+  --secondary-color-dark: #f4a2a0;
 
---fs-5: 1rem;
---fs-1: 1rem;
-    
+  /* TYPOGRAPHY  */
+  /* 1rem = 16px */
+  --primary-font: 'Montserrat', 'sans-serif';
+
+  --fs-25px: 1.388rem
+  --fs-8: 2rem;
+  --fs-5: 1rem;
+  --fs-1: 1rem;
+
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
 }
 
 /* css reset code */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-  font-family: 'Montserrat', 'sans-serif'
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "sans-serif";
 }
 
-body{
+html{
+  font-size: 18px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
   
-
 }
 
-.top-header{
-  font-size: 1rem;
-}
 
+
+
+/* ========Header PROPERTIES===== */
 h1 {
   font-size: 64px;
+  font-weight: 700
 }
 
 h2 {
   font-size: 48px;
+  font-weight: 700
 }
 
 h3 {
@@ -53,14 +70,15 @@ h4 {
   font-weight: 600;
 }
 
-
-/* HOME PAGE */
-.home-page{
-  height: 400vh;
-
+h5 {
+  font-size: 28px;
+  font-weight: 600;
 }
+
+/* ------------WEBSITE HEADER-------------*/
+
 /* topheader */
-.top-header{
+.top-header {
   background-color: var(--primary-color-light);
   height: 40px;
   display: flex;
@@ -68,7 +86,7 @@ h4 {
   align-content: center;
 }
 
-.top-header p{
+.top-header p {
   margin-top: 12px;
   font-weight: 500;
   font-size: 14px;
@@ -76,7 +94,7 @@ h4 {
 }
 
 /* mainheader */
-.main-header{
+.main-header {
   background-color: var(--primary-color);
   padding: 0 100px;
   height: 87px;
@@ -85,12 +103,319 @@ h4 {
   justify-content: space-between;
 }
 
-.main-header a img{
-  
+.main-header a img {
 }
 
-.main-header nav li{
-  display: inline-block;
+.main-header .navbar{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-header .navbar li {
+  max-height: 100%;
   margin: 20px;
   list-style: none;
+}
+
+.main-header ul li a {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-header ul li a:hover{
+  color: var(--secondary-color-dark);
+}
+
+/* sidebar */
+.sidebar{
+  position:fixed;
+  top:0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 9999;
+  background-color: var(--primary-color-dark);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+  list-style: none;
+  margin: 20px 10px;
+}
+
+/* ============FOOTER============ */
+
+footer {
+  width: 100%;
+  height: 412px;
+  background-color: #1c1c1c;
+}
+.footer {
+  margin: 0px 100px;
+  height: 80%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 90px;
+  justify-content: space-between;
+}
+
+.contact {
+  position: relative;
+  top: 60px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact .social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  gap: 20px;
+}
+
+.footer .social-icons a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer .logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+footer .credits {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.footer nav {
+  display: flex;
+  gap: 20px;  
+  justify-content: center;
+  align-items: center;
+}
+
+.footer nav a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+/* ===========HOMEPAGE MAIN=========== */
+/* Hero */
+.product-preview {
+  background: linear-gradient(0deg, #92a8d1 0%, #f7cac9 96%);
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.product-preview img {
+  padding: 50px;
+  height: 85vh;
+}
+
+/* Photocard Preview */
+
+.photocards-preview{
+  max-width: 100%;
+  min-width: 100%;
+  padding: 20px;
+  background: linear-gradient(0deg, #92A8D1 0%, #92A8D1 4%, #F5E1E1 29%);
+  border-radius: 8px;
+}
+
+.photocards-preview h2 {
+  text-align: center;
+  margin: 50px 0;
+  text-transform: uppercase;
+}
+
+.photocards{
+  margin: 0 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 195px;
+}
+
+.photocard-container{
+  background-color: white;
+  width: 425px;
+  max-height: 601px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.photocard-container img{
+  align-self: center;
+  max-width: 400px;
+  max-height: 400px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* .photocards-container {
+  max-width: 100%;
+  margin: 0 100px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.album-container h2 {
+  text-align: center;
+  margin: 50px 0;
+  text-transform: uppercase;
+}
+
+.albums {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.album {
+  position: relative;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 250px;
+}
+
+.album img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.sale-badge {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #00ff00;
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  font-size: 14 px;
+  font-weight: bold;
+}
+
+.artist {
+  font-size: 14px;
+  color: #ff69b4;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+
+
+.price {
+  font-size: 2rem;
+  color: #007bff;
+  font-weight: 600;
+} */
+
+/* Features Artists */
+
+/* Footer */
+
+
+/* ========================================================================================================================== */
+
+/* Product Page Css */
+
+.container {
+  margin-top: 20px;
+}
+
+.container h2 {
+  text-align: center;
+}
+.container h3 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.line {
+  border: none;
+  border-top: 5px solid #000000;
+  width: 80%;
+  margin: 20px auto;
+  top: 100px;
+}
+
+.ion-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.ion-card {
+  flex: 1 0 auto;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+}
+
+.ion-card-header {
+  background-color: #d9d9d9;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 10px 10px 0 0;
+}
+
+.ion-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.ion-card-content {
+  padding: 10px;
+}
+
+.group-name {
+  font-weight: bold;
+  color: #f7cac9;
+}
+
+.merch-name {
+  color: #555;
+  font-weight: bold;
+}
+
+.merch-price {
+  color: #e3001b;
+  font-weight: bold;
+}
+
+.ion-card-title img {
+  max-width: 100%;
+  height: auto;
 }
