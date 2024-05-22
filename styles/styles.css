@@ -16,7 +16,7 @@
   /* 1rem = 16px */
   --primary-font: 'Montserrat', 'sans-serif';
 
-  --fs-25px: 1.388rem
+  --fs-25px: 1.388rem;
   --fs-8: 2rem;
   --fs-5: 1rem;
   --fs-1: 1rem;
@@ -29,7 +29,7 @@
 }
 
 /* css reset code */
-* {
+*, *::before, *::after  {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -39,15 +39,13 @@
 html{
   font-size: 18px;
   height: 100%;
+  width: auto;
   margin: 0;
   padding: 0;
 }
 body {
-  
+ 
 }
-
-
-
 
 /* ========Header PROPERTIES===== */
 h1 {
@@ -152,6 +150,18 @@ h5 {
   list-style: none;
   margin: 20px 10px;
 }
+.menu-button{
+  display: none;
+}
+
+@media (max-width: 900px){
+  .hideOnmobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
 
 /* ============FOOTER============ */
 
@@ -227,6 +237,7 @@ footer .credits {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 .product-preview img {

@@ -18,7 +18,7 @@
 <body>
 
     <!-- HEADER -->
-    <main>
+    
     <header>
         <div class="top-header">
             <p>Welcome To main_sells Store!</p>
@@ -31,7 +31,7 @@
                     <li class="hideOnmobile"><a href="products.html">Products</a></li>
                     <li class="hideOnmobile"><a href="about.html">About us</a></li>
                     <li class="hideOnmobile"><a href="contact.html">Contact</a></li>
-                    <li onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    <li class="menu-button" onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
                 <ul class="sidebar">
                     <li><a href="index.html">Home</a></li>
@@ -71,33 +71,42 @@
     <!-- footer -->
     <footer>
         <div class="footer">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="logo">
-                <span class="logo-text">main_sells store</span>
-            </div>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Products</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </nav>
-            <div class="contact">
-                <p>Contact Us</p>
-                <p>@main_gyuu</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                    <a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-messenger fa-2xl"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+            <div class="footer-row">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="logo">
+                    <h5><span class="logo-text">main_sells</span></h5>
+                </div>
+                <div class="Navigation">
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="#">Products</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </nav>
+                </div>
+                <div class="Address">
+                    <h5>Address</h5>
+                    <div class="exact-address">
+                        <p>Progressive Village, Liano Road, </p>
+                        <p>Progressive Village 1, Baranggay 167 Caloocan City</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h5>Social Links</h5>
+                    <div class="social-icons">
+                      <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                      <a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+                      <a href="#"><i class="fa-brands fa-facebook-messenger fa-2xl"></i></a>
+                      <a href="#"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+                  </div>
                 </div>
             </div>
-            
+            <hr class="divider">
+            <div class="credits">
+                <p>&copy; Copyright 2024 main_sells. All rights reserved.</p>
+                <p>Website designed by <span id="des">claire & selwyn</span> and developed by <span id="dev">selwyn & ochoa</span>.</p>
+            </div>
         </div>
-        <div class="credits">
-            <p>&copy; Copyright 2024 main_sells. All rights reserved.</p>
-            <p>Website designed by <span id="des">claire & selwyn</span> and developed by <span id="dev">selwyn & ochoa</span>.</p>
-        </div>
-    </footer>
-    
+    </footer> 
 </body>
 </html>
