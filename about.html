@@ -2,72 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>main_sells</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/47aed4aaf6.js" crossorigin="anonymous"></script>
-
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.png">
 </head>
 <body>
-
-    <!-- HEADER -->
-    <main>
     <header>
+
         <div class="top-header">
-            <p>Welcome To main_sells Store!</p>
+            <p>Welcome to main_sells website!</p>
         </div>
+
         <div class="main-header">
-            <a><img src="assets/images/logo.png" alt="logo"></a>
-            <nav>
-                <ul class="navbar">
-                    <li class="hideOnmobile"><a href="index.html">Home</a></li>
-                    <li class="hideOnmobile"><a href="products.html">Products</a></li>
-                    <li class="hideOnmobile"><a href="about.html">About us</a></li>
-                    <li class="hideOnmobile"><a href="contact.html">Contact</a></li>
-                    <li onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                </ul>
-                <ul class="sidebar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-             
-        </div>
-    </header>
-    <main>
-        <section class="product-preview">
-            <div class="product-image">
-                <img src="assets/images/album1.png">
-            </div>
             
-        </section>
-        
-        <section class="photocards-preview">
-            <h2>Photocards</h2>
-            <div class="photocards">
-                <div class="photocard-container">
-                    <img src="assets/photocards/photocard1.jpg" alt="photocard">
-                    <h5>Seventeen</h5>
-                    <p>Seventeenth Heaven Photocards</p>
-                </div>
-                <div class="photocard-container">
-                    <img src="assets/photocards/photocard1.jpg" alt="photocard">
-                    <h5>Seventeen</h5>
-                    <p>Seventeenth Heaven Photocards</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- footer -->
+
+            <a><img src="assets/images/logo.png" alt="logo"></a>
+
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a>Contact</a></li>
+            </nav>
+            
+        </div>
+
+    </header>
+
+    <div class="album-container"></div>
+
     <footer>
         <div class="footer">
             <div class="footer-row">
@@ -106,7 +75,5 @@
                 <p>Website designed by <span id="des">claire & selwyn</span> and developed by <span id="dev">selwyn & ochoa</span>.</p>
             </div>
         </div>
-    </footer>
-    
 </body>
 </html>
