@@ -17,52 +17,55 @@
     <!-- HEADER -->
 
     <header>
-
-        <div class="top-header">
-            <p>main_sells offers 75% off for selected products!</p>
-        </div>
-
-        <div class="main-header">
-            
-            <a><img src="assets/images/logo.png" alt="logo"></a>
-
-            <nav>
+      <div class="top-header">
+        <p>Welcome To main_sells Store!</p>
+    </div>
+    <div class="main-header">
+        <a><img src="assets/images/logo.png" alt="logo"></a>
+        <nav>
+            <ul class="navbar">
+                <li class="hideOnmobile"><a href="index.html">Home</a></li>
+                <li class="hideOnmobile"><a href="products.html">Products</a></li>
+                <li class="hideOnmobile"><a href="about.html">About us</a></li>
+                <li class="hideOnmobile"><a href="contact.html">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="sidebar">
                 <li><a href="index.html">Home</a></li>
-                <li><a>Products</a></li>
-                <li><a>About us</a></li>
-                <li><a>Contact</a></li>
-            </nav>
-            
-        </div>
-
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+         
+    </div>
+</header>
     </header>
     <div class="container">
-        <h2>PRODUCTS</h2>
+      <h2>PRODUCTS</h2>
         <hr class="line">
         <h3>PHOTOCARDS</h3>
-    <div class="ion-grid">
-        <div class="ion-row">
-          <div class="ion-col size-lg-4 size-md-4 size-6">
-            <div class="ion-card card-style">
-              <div class="ion-card-header">
-                <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
-              </div>
-              
-              <div class="ion-card-content card-content">
-                <p class="group-name">SEVENTEEN</p>
-                <p class="merch-name">SCOUPS PHOTOCARDS</p>
-                <p class="merch-price">P100.00</p>
+        <div class="ion-grid">
+          <div class="ion-row">
+            <div class="ion-col size-lg-4 size-md-4 size-6">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'SCOUPS PHOTOCARDS', 'P100.00', '../websysProject/assets/images/mrBeast.jpg')">
+                <div class="ion-card-header">
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/1-anOde/photocard1.jpg" alt="example pic"></div>
+                </div>
+                <div class="ion-card-content card-content">
+                  <p class="group-name">SEVENTEEN</p>
+                  <p class="merch-name">SCOUPS PHOTOCARDS</p>
+                  <p class="merch-price">P100.00</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="ion-row">
+          <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'JEONGHAN PHOTOCARDS', 'P120.00', '../websysProject/assets/images/mrBeast.jpg')">
                 <div class="ion-card-header">
-                  <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/1-anOde/photocard2.jpg" alt="example pic"></div>
                 </div>
-                
                 <div class="ion-card-content card-content">
                   <p class="group-name">SEVENTEEN</p>
                   <p class="merch-name">JEONGHAN PHOTOCARDS</p>
@@ -73,11 +76,10 @@
           </div>
           <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'JOSHUA PHOTOCARDS', 'P85.00', '../websysProject/assets/images/mrBeast.jpg')">
                 <div class="ion-card-header">
-                  <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/1-anOde/photocard4.jpg" alt="example pic"></div>
                 </div>
-                
                 <div class="ion-card-content card-content">
                   <p class="group-name">SEVENTEEN</p>
                   <p class="merch-name">JOSHUA PHOTOCARDS</p>
@@ -88,11 +90,10 @@
           </div>
           <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'JUN PHOTOCARDS', 'P85.00', '../websysProject/assets/images/mrBeast.jpg')">
                 <div class="ion-card-header">
-                  <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/1-anOde/photocard4.jpg" alt="example pic"></div>
                 </div>
-                
                 <div class="ion-card-content card-content">
                   <p class="group-name">SEVENTEEN</p>
                   <p class="merch-name">JUN PHOTOCARDS</p>
@@ -103,11 +104,10 @@
           </div>
           <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'HOSHI PHOTOCARDS', 'P100.00', '../websysProject/assets/images/mrBeast.jpg')">
                 <div class="ion-card-header">
-                  <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/photocard1.jpg" alt="example pic"></div>
                 </div>
-                
                 <div class="ion-card-content card-content">
                   <p class="group-name">SEVENTEEN</p>
                   <p class="merch-name">HOSHI PHOTOCARDS</p>
@@ -116,30 +116,26 @@
               </div>
             </div>
           </div>
-      </div>
-      <div class="ion-grid">
-        <div class="ion-row">
-          <div class="ion-col size-lg-4 size-md-4 size-6">
-            <div class="ion-card card-style">
-              <div class="ion-card-header">
-                <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
-              </div>
-              
-              <div class="ion-card-content card-content">
-                <p class="group-name">SEVENTEEN</p>
-                <p class="merch-name">WONHOO PHOTOCARDS</p>
-                <p class="merch-price">P120.00</p>
+          <div class="ion-row">
+            <div class="ion-col size-lg-4 size-md-4 size-6">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'WONHOO PHOTOCARDS', 'P120.00', '../websysProject/assets/images/mrBeast.jpg')">
+                <div class="ion-card-header">
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/photocard1.jpg" alt="example pic"></div>
+                </div>
+                <div class="ion-card-content card-content">
+                  <p class="group-name">SEVENTEEN</p>
+                  <p class="merch-name">WONHOO PHOTOCARDS</p>
+                  <p class="merch-price">P120.00</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="ion-row">
+          <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'WOOZI PHOTOCARDS', 'P85.00', '../websysProject/assets/images/mrBeast.jpg')">
                 <div class="ion-card-header">
-                  <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/photocard1.jpg" alt="example pic"></div>
                 </div>
-                
                 <div class="ion-card-content card-content">
                   <p class="group-name">SEVENTEEN</p>
                   <p class="merch-name">WOOZI PHOTOCARDS</p>
@@ -150,11 +146,10 @@
           </div>
           <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'DK PHOTOCARDS', 'P85.00', '../websysProject/assets/images/mrBeast.jpg')">
                 <div class="ion-card-header">
-                  <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/photocard1.jpg" alt="example pic"></div>
                 </div>
-                
                 <div class="ion-card-content card-content">
                   <p class="group-name">SEVENTEEN</p>
                   <p class="merch-name">DK PHOTOCARDS</p>
@@ -165,11 +160,10 @@
           </div>
           <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'MINGYU PHOTOCARDS', 'P120.00', '../websysProject/assets/images/mrBeast.jpg')">
                 <div class="ion-card-header">
-                  <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/photocard1.jpg" alt="example pic"></div>
                 </div>
-                
                 <div class="ion-card-content card-content">
                   <p class="group-name">SEVENTEEN</p>
                   <p class="merch-name">MINGYU PHOTOCARDS</p>
@@ -180,11 +174,10 @@
           </div>
           <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'THE8 PHOTOCARDS', 'P120.00', '../websysProject/assets/images/mrBeast.jpg')">
                 <div class="ion-card-header">
-                  <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/photocard1.jpg" alt="example pic"></div>
                 </div>
-                
                 <div class="ion-card-content card-content">
                   <p class="group-name">SEVENTEEN</p>
                   <p class="merch-name">THE8 PHOTOCARDS</p>
@@ -193,30 +186,26 @@
               </div>
             </div>
           </div>
-      </div>
-      <div class="ion-grid">
-        <div class="ion-row">
-          <div class="ion-col size-lg-4 size-md-4 size-6">
-            <div class="ion-card card-style">
-              <div class="ion-card-header">
-                <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
-              </div>
-              
-              <div class="ion-card-content card-content">
-                <p class="group-name">SEVENTEEN</p>
-                <p class="merch-name">SEUNGKWAN PHOTOCARDS</p>
-                <p class="merch-price">P85.00</p>
+          <div class="ion-row">
+            <div class="ion-col size-lg-4 size-md-4 size-6">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'SEUNGKWAN PHOTOCARDS', 'P85.00', '../websysProject/assets/images/mrBeast.jpg')">
+                <div class="ion-card-header">
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/photocard1.jpg" alt="example pic"></div>
+                </div>
+                <div class="ion-card-content card-content">
+                  <p class="group-name">SEVENTEEN</p>
+                  <p class="merch-name">SEUNGKWAN PHOTOCARDS</p>
+                  <p class="merch-price">P85.00</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="ion-row">
+          <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'VERNON PHOTOCARDS', 'P85.00', '../websysProject/assets/images/mrBeast.jpg')">
                 <div class="ion-card-header">
-                  <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/photocard1.jpg" alt="example pic"></div>
                 </div>
-                
                 <div class="ion-card-content card-content">
                   <p class="group-name">SEVENTEEN</p>
                   <p class="merch-name">VERNON PHOTOCARDS</p>
@@ -227,76 +216,27 @@
           </div>
           <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'DINO PHOTOCARDS', 'P85.00', '../websysProject/assets/images/mrBeast.jpg')">
                 <div class="ion-card-header">
-                  <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/photocard1.jpg" alt="example pic"></div>
                 </div>
-                
                 <div class="ion-card-content card-content">
                   <p class="group-name">SEVENTEEN</p>
                   <p class="merch-name">DINO PHOTOCARDS</p>
                   <p class="merch-price">P85.00</p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>  
-      <h3>ALBUMS</h3>
-
-      
-      <div class="ion-grid">
-        <div class="ion-row">
-          <div class="ion-col size-lg-4 size-md-4 size-6">
-            <div class="ion-card card-style">
-              <div class="ion-card-header">
-                <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
-              </div>
-              
-              <div class="ion-card-content card-content">
-                <p class="group-name">SEVENTEEN</p>
-                <p class="merch-name">SEUNGKWAN PHOTOCARDS</p>
-                <p class="merch-price">P85.00</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="ion-row">
-            <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
-                <div class="ion-card-header">
-                  <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
-                </div>
-                
-                <div class="ion-card-content card-content">
-                  <p class="group-name">SEVENTEEN</p>
-                  <p class="merch-name">VERNON PHOTOCARDS</p>
-                  <p class="merch-price">P85.00</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <h3>ALBUMS</h3>
+        <div class="ion-grid">
           <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'SEVENTEENTH HEAVEN PHOTOCARDS', 'P12,000.00', '../websysProject/assets/images/mrBeast.jpg')">
                 <div class="ion-card-header">
-                  <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/photocard1.jpg" alt="example pic"></div>
                 </div>
-                
-                <div class="ion-card-content card-content">
-                  <p class="group-name">SEVENTEEN</p>
-                  <p class="merch-name">DINO PHOTOCARDS</p>
-                  <p class="merch-price">P85.00</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ion-row">
-            <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
-                <div class="ion-card-header">
-                  <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
-                </div>
-                
                 <div class="ion-card-content card-content">
                   <p class="group-name">SEVENTEEN</p>
                   <p class="merch-name">SEVENTEENTH HEAVEN PHOTOCARDS</p>
@@ -307,11 +247,10 @@
           </div>
           <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
-              <div class="ion-card card-style">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'SEVENTEENTH HEAVEN PHOTOCARDS', 'P12,000.00', '../websysProject/assets/images/mrBeast.jpg')">
                 <div class="ion-card-header">
-                  <div class="ion-card-title card-title"><img src="assets/images/mrBeast.jpg" alt="example pic"></div>
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/photocard1.jpg" alt="example pic"></div>
                 </div>
-                
                 <div class="ion-card-content card-content">
                   <p class="group-name">SEVENTEEN</p>
                   <p class="merch-name">SEVENTEENTH HEAVEN PHOTOCARDS</p>
@@ -320,39 +259,100 @@
               </div>
             </div>
           </div>
-      </div>
-    </div>
+          <div class="ion-row">
+            <div class="ion-col size-lg-4 size-md-4 size-6">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'SEVENTEENTH HEAVEN PHOTOCARDS', 'P12,000.00', '../websysProject/assets/images/mrBeast.jpg')">
+                <div class="ion-card-header">
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/photocard1.jpg" alt="example pic"></div>
+                </div>
+                <div class="ion-card-content card-content">
+                  <p class="group-name">SEVENTEEN</p>
+                  <p class="merch-name">SEVENTEENTH HEAVEN PHOTOCARDS</p>
+                  <p class="merch-price">P12,000.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ion-row">
+            <div class="ion-col size-lg-4 size-md-4 size-6">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'SEVENTEENTH HEAVEN PHOTOCARDS', 'P12,000.00', '../websysProject/assets/images/mrBeast.jpg')">
+                <div class="ion-card-header">
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/photocard1.jpg" alt="example pic"></div>
+                </div>
+                <div class="ion-card-content card-content">
+                  <p class="group-name">SEVENTEEN</p>
+                  <p class="merch-name">SEVENTEENTH HEAVEN PHOTOCARDS</p>
+                  <p class="merch-price">P12,000.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ion-row">
+            <div class="ion-col size-lg-4 size-md-4 size-6">
+              <div class="ion-card card-style" onclick="navigateToOrder('SEVENTEEN', 'SEVENTEENTH HEAVEN PHOTOCARDS', 'P12,000.00', '../websysProject/assets/images/mrBeast.jpg')">
+                <div class="ion-card-header">
+                  <div class="ion-card-title card-title"><img src="/assets/photocards/photocard1.jpg" alt="example pic"></div>
+                </div>
+                <div class="ion-card-content card-content">
+                  <p class="group-name">SEVENTEEN</p>
+                  <p class="merch-name">SEVENTEENTH HEAVEN PHOTOCARDS</p>
+                  <p class="merch-price">P12,000.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>   
     <footer>
       <div class="footer">
-          <div class="logo">
-              <img src="assets/images/logo.png" alt="logo">
-              <span class="logo-text">main_sells store</span>
-          </div>
-          <nav>
-              <a href="#">Home</a>
-              <a href="#">Products</a>
-              <a href="#">About</a>
-              <a href="#">Contact</a>
-          </nav>
-          <div class="contact">
-              <p>Contact Us</p>
-              <p>@main_gyuu</p>
-              <div class="social-icons">
+        <div class="footer-row">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="logo">
+                <h5><span class="logo-text">main_sells</span></h5>
+            </div>
+            <div class="Navigation">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Products</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+            <div class="Address">
+                <h5>Address</h5>
+                <div class="exact-address">
+                    <p>Progressive Village, Liano Road, </p>
+                    <p>Progressive Village 1, Baranggay 167 Caloocan City</p>
+                </div>
+            </div>
+            <div class="contact">
+                <h5>Social Links</h5>
+                <div class="social-icons">
                   <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
                   <a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a>
                   <a href="#"><i class="fa-brands fa-facebook-messenger fa-2xl"></i></a>
                   <a href="#"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
               </div>
-          </div>
-          
-      </div>
-      <div class="credits">
-          <p>&copy; Copyright 2024 main_sells. All rights reserved.</p>
-          <p>Website designed by <span id="des">claire & selwyn</span> and developed by <span id="dev">selwyn & ochoa</span>.</p>
-      </div>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="credits">
+            <p>&copy; Copyright 2024 main_sells. All rights reserved.</p>
+            <p>Website designed by <span id="des">claire & selwyn</span> and developed by <span id="dev">selwyn & ochoa</span>.</p>
+        </div>
+    </div>
   </footer>  
 
-    
+  <script>
+    function navigateToOrder(groupName, merchName, merchPrice, imgSrc) {
+  const encodedGroupName = encodeURIComponent(groupName);
+  const encodedMerchName = encodeURIComponent(merchName);
+  const encodedMerchPrice = encodeURIComponent(merchPrice);
+  const encodedImgSrc = encodeURIComponent(imgSrc);
+  
+  window.location.href = `order.html?group=${encodedGroupName}&name=${encodedMerchName}&price=${encodedMerchPrice}&img=${encodedImgSrc}`;
+}
+</script>
     
 </body>
 </html>

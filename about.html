@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
 
     <script src="https://kit.fontawesome.com/47aed4aaf6.js" crossorigin="anonymous"></script>
 </head>
@@ -16,54 +17,97 @@
     <header>
 
         <div class="top-header">
-            <p>Welcome to main_sells website!</p>
+            <p>Welcome To main_sells Store!</p>
         </div>
-
         <div class="main-header">
-            
-
             <a><img src="assets/images/logo.png" alt="logo"></a>
-
             <nav>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a>Contact</a></li>
+                <ul class="navbar">
+                    <li class="hideOnmobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnmobile"><a href="products.html">Products</a></li>
+                    <li class="hideOnmobile"><a href="about.html">About us</a></li>
+                    <li class="hideOnmobile"><a href="contact.html">Contact</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+                <ul class="sidebar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </nav>
-            
+             
         </div>
 
     </header>
 
-    <div class="album-container"></div>
 
+    <main>
+        <section class="about-us">
+            <div class="mainsells-info">
+                <img src="assets/images/logo-high.png" alt="logo">
+                <h2>main_sells</h2>
+                <p>main_sells is an online business
+                    offering KPop Merchandise
+                    for the fans of the seventeen
+                </p>
+            </div>
+        </section>
+        <section class="about-us info">
+            <h2>About us</h2>
+            <div class="information">
+                <img src="assets/images/logo-high.png" alt="logo">
+                <p id="info">
+                    Main_Sells was created around the month of 
+                    September year 2023. This was located at 
+                    Progressive Village, Llano Road, Progressive Village 1, 
+                    Barangay 167, Caloocan City. The owner is a carat fan 
+                    herself. Shes quite happy with  the on-going business
+                     and will be looking forward to more products this month!
+                </p>
+            </div>
+            <div class="btn">
+                <button class="btn btn-1">Contact us</button>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="footer">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="logo">
-                <span class="logo-text">main_sells store</span>
-            </div>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Products</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </nav>
-            <div class="contact">
-                <p>Contact Us</p>
-                <p>@main_gyuu</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                    <a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-messenger fa-2xl"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+            <div class="footer-row">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="logo">
+                    <h5><span class="logo-text">main_sells</span></h5>
+                </div>
+                <div class="Navigation">
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="#">Products</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </nav>
+                </div>
+                <div class="Address">
+                    <h5>Address</h5>
+                    <div class="exact-address">
+                        <p>Progressive Village, Liano Road, </p>
+                        <p>Progressive Village 1, Baranggay 167 Caloocan City</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h5>Social Links</h5>
+                    <div class="social-icons">
+                      <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                      <a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+                      <a href="#"><i class="fa-brands fa-facebook-messenger fa-2xl"></i></a>
+                      <a href="#"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+                  </div>
                 </div>
             </div>
-            
-        </div>
-        <div class="credits">
-            <p>&copy; Copyright 2024 main_sells. All rights reserved.</p>
-            <p>Website designed by <span id="des">claire & selwyn</span> and developed by <span id="dev">selwyn & ochoa</span>.</p>
+            <hr class="divider">
+            <div class="credits">
+                <p>&copy; Copyright 2024 main_sells. All rights reserved.</p>
+                <p>Website designed by <span id="des">claire & selwyn</span> and developed by <span id="dev">selwyn & ochoa</span>.</p>
+            </div>
         </div>
     </footer>
 </body>

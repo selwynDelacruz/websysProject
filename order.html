@@ -2,23 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>main_sells</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="https://kit.fontawesome.com/47aed4aaf6.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
 
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.png">
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
 </head>
 <body>
-
-    <!-- HEADER -->
-    
     <header>
         <div class="top-header">
             <marquee>Welcome to main_sells store!</marquee>
@@ -43,61 +36,22 @@
              
         </div>
     </header>
-    <main>
-        <!-- Hero-BANNER -->
-        <section class="product-preview">
-            <div class="product-image">
-                <img src="assets/albums/album2.jpg">
+    
+    <div class="order-container">
+        <h2>Order Details</h2>
+        <div class="order-details-card">
+            <div class="order-product-image">
+                <img id="order-product-img" src="" alt="Product Image">
             </div>
-        </section>
+            <div class="order-product-info">
+                <p class="order-group-name" id="order-group-name"></p>
+                <p class="order-merch-name" id="order-merch-name"></p>
+                <p class="order-merch-price" id="order-merch-price"></p>
+                <button class="order-button">Order Now</button>
+            </div>
+        </div>
+    </div>
 
-        <!-- Photocards Preview -->
-        <section class="photocards-preview">
-            <h2>Photocards</h2>
-            <div class="photocards">
-                <div class="photocard-container">
-                    <img src="assets/photocards/photocard1.jpg" alt="photocard">
-                    <h5>Seventeen</h5>
-                    <h4>Seventeenth Heaven Photocards</h4>
-                </div>
-                <div class="photocard-container">
-                    <img src="assets/photocards/1-anOde/photocard7.jpg" alt="photocard">
-                    <h5>Seventeen</h5>
-                    <h4>Seventeenth Heaven Photocards</h4>
-                </div>
-            </div>
-            <div class="btn">
-                <button class="btn btn-1">View more</button>
-            </div>
-        </section>
-
-        <!-- Album Preview -->
-        <section class="albums-preview">
-            <h2>Albums</h2>
-            <div class="album-container">
-                <div class="albums">
-                    <img class="image" src="assets/albums/album1.jpg" alt="album">
-                    <h5>Seventeen</h5>
-                    <p>SEVENTEEN 10TH mini album FML (No POB)</p>
-                </div>
-                <div class="albums">
-                    <img class="image" src="assets/albums/album2.jpg" alt="album">
-                    <h5>Seventeen</h5>
-                    <p>SEVENTEEN 10TH mini album FML (No POB)</p>
-                </div>
-                <div class="albums">
-                    <img class="image" src="assets/albums/album3.jpg" alt="album">
-                    <h5>Seventeen</h5>
-                    <p>SEVENTEEN 10TH mini album FML (No POB)</p>
-                </div>
-            </div>
-            <div class="btn">
-                <a href="products.html"><button class="btn btn-1" >View more</button></a>
-            </div>
-        </section>
-    </main>
-
-    <!-- footer -->
     <footer>
         <div class="footer">
             <div class="footer-row">
@@ -137,5 +91,27 @@
             </div>
         </div>
     </footer> 
+
+    <script>
+        
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        
+    window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const groupName = decodeURIComponent(urlParams.get('group'));
+    const merchName = decodeURIComponent(urlParams.get('name'));
+    const merchPrice = decodeURIComponent(urlParams.get('price'));
+    const imgSrc = decodeURIComponent(urlParams.get('img'));
+    
+    document.getElementById('order-group-name').textContent = groupName;
+    document.getElementById('order-merch-name').textContent = merchName;
+    document.getElementById('order-merch-price').textContent = merchPrice;
+    document.getElementById('order-product-img').src = imgSrc;
+}
+    </script>
 </body>
 </html>
