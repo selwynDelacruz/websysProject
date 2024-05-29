@@ -85,12 +85,18 @@ button{
   border: none;
   cursor: pointer;
   color: #fff;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   text-decoration: none;
+}
+button:hover{
+  transform: scale(1.1)
 }
 .btn-1{
   background-color: var(--primary-color-dark);
   text-decoration: none;  
+}
+.btn a {
+  text-decoration: none;
 }
 
 /* ------------WEBSITE NAVHEADER-------------*/
@@ -104,12 +110,12 @@ button{
   align-content: center;
 }
 
-.top-header p {
+/* .top-header marquee {
   margin-top: 12px;
   font-weight: 500;
   font-size: 14px;
   text-align: center;
-}
+} */
 
 /* mainheader */
 .main-header {
@@ -284,7 +290,7 @@ footer {
 
 /* Hero */
 
-.product-preview{
+/* .product-preview{
   background: linear-gradient(0deg, #92a8d1 0%, #f7cac9 96%);
   width: auto;
   height: 83vh;
@@ -297,6 +303,37 @@ footer {
 .product-preview img{
   height: 100%;
   width: 100%;
+} */
+
+.carousel-container{
+  background: linear-gradient(0deg, #92a8d1 0%, #f7cac9 96%);
+  width: auto;
+  height: 83vh;
+  display: flex;
+  padding: 50px 0;
+  justify-content: center;
+}
+
+.product-image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-image{
+  position: absolute;
+  min-width: auto;
+  min-height: auto;
+  display: none;
+}
+
+.carousel-image.active {
+  display: block;
+  max-width: auto ;
+  height: 536px;
+  justify-self: center;
 }
 
 /* Photocard Preview */
@@ -374,13 +411,17 @@ footer {
   
 }
 .albums{
-  box-shadow: 5px 4px 4px 0px #404040;
+
   display:flex;
   flex-wrap: wrap;
   flex-direction: column;
   /* border: 3px solid #ff0000; */
   width: 350px;
   height: 490px;
+}
+
+.albums:hover{
+  box-shadow: 5px 4px 4px 0px #404040;
 }
 .albums-preview .albums .image{
   background-color: grey;
@@ -413,8 +454,8 @@ footer {
   display: flex;
   justify-content: center;
   margin: 50px 0;
-  transform: scale(1.1)
-} */
+
+}   
 
 
 
@@ -635,6 +676,7 @@ footer {
   margin: 100px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 104px;
 }
@@ -666,13 +708,13 @@ footer {
 }
 
 .contact-container{
-  padding: 10px;
+  padding: 50px;
   background-color: var(--secondary-color-dark);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  height: 448px;
+  height: auto;
 }
 .contact-us .social-container{
   padding: 50px;
@@ -682,7 +724,7 @@ footer {
   justify-content: center ;
 }
 .contact-us .social-medias{
-  max-width: 390px;
+  min-width: 10%;
   border-radius: 20px;
   padding: 20px 25px;
   background: linear-gradient(0deg, #92A8D1 1%, #F7CAC9 100%);
@@ -696,24 +738,67 @@ footer {
   width:80px;
   border-radius: 20px
 }
+
+.contact-us .social-medias p{
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* form */
+
+.form-container{
+
+  display: flex;
+  justify-content: center ;
+}
 .contact-form{
+  display: flex;
+  flex-direction: column;
   height: 100vh;
+  background-color: #007BFF;
+  margin: 50px;
+  border-radius: 20px;
+  
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+/* .contact-form{
+  height: auto;
 }
 
 .form-container{
   display: flex;
-  justify-content: center;
-  align-content: center;
+  justify-content: center; 
+  margin: 100px;
 }
 
 .contact-form {
-  margin: 50px; 
+  margin: 501px;
   background-color: #486bb7;
-  padding: 20px 40px;
+  padding: 20px 100px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: 850px;
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .contact-form h1 {
@@ -754,4 +839,4 @@ footer {
 
 .contact-form button:hover {
   background-color: #5a74cc;
-}
+} */
