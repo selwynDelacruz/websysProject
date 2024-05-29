@@ -45,6 +45,7 @@
       <h2>PRODUCTS</h2>
         <hr class="line">
         <h3>PHOTOCARDS</h3>
+        <div id="photocards-carousel" class="carousel"> 
         <div class="ion-grid">
           <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
@@ -229,7 +230,9 @@
             </div>
           </div>
         </div>
+        </div>
         <h3>ALBUMS</h3>
+        <div id="albums-carousel" class="carousel">
         <div class="ion-grid">
           <div class="ion-row">
             <div class="ion-col size-lg-4 size-md-4 size-6">
@@ -302,6 +305,7 @@
             </div>
           </div>
         </div>
+      </div>
     </div>   
     <footer>
       <div class="footer">
@@ -344,6 +348,71 @@
   </footer>  
 
   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const carousels = document.querySelectorAll('.carousel');
+  let currentIndex = 0;
+
+  function enableCarousel(carousel) {
+    const grid = carousel.querySelector('.ion-grid');
+    const cols = Array.from(grid.querySelectorAll('.ion-col'));
+
+    
+    grid.style.width = `${cols.length * 100}%`;
+
+    function showSlide(index) {
+      if (index >= cols.length) {
+        currentIndex = 0;
+      } else if (index < 0) {
+        currentIndex = cols.length - 1;
+      } else {
+        currentIndex = index;
+      }
+      grid.style.transform = `translateX(-${currentIndex * 100 / cols.length}%)`;
+    }
+
+    let startX;
+    grid.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    grid.addEventListener('touchmove', (e) => {
+      if (!startX) return;
+      let diffX = startX - e.touches[0].clientX;
+      if (diffX > 50) {
+        showSlide(currentIndex + 1);
+        startX = null;
+      } else if (diffX < -50) {
+        showSlide(currentIndex - 1);
+        startX = null;
+      }
+    });
+  }
+
+  function disableCarousel(carousel) {
+    const grid = carousel.querySelector('.ion-grid');
+    grid.style.transform = 'none';
+    grid.style.width = 'auto'; 
+  }
+
+  function checkScreenWidth() {
+    const screenWidth = window.innerWidth;
+
+    carousels.forEach(carousel => {
+      if (screenWidth <= 426) {
+        enableCarousel(carousel);
+      } else {
+        disableCarousel(carousel);
+      }
+    });
+  }
+
+  checkScreenWidth();
+  window.addEventListener('resize', checkScreenWidth);
+});
+
+
+
+
     function navigateToOrder(groupName, merchName, merchPrice, imgSrc) {
   const encodedGroupName = encodeURIComponent(groupName);
   const encodedMerchName = encodeURIComponent(merchName);
